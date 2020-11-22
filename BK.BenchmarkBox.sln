@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BK.BenchmarkBox.Events", "BK.BenchmarkBox.Events\BK.BenchmarkBox.Events.csproj", "{ED7BCEFD-3967-4670-98C8-44F69CA45126}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BK.BenchmarkBox.Events", "BK.BenchmarkBox.Events\BK.BenchmarkBox.Events.csproj", "{ED7BCEFD-3967-4670-98C8-44F69CA45126}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7AFC841C-4264-433E-928A-ADE7BFBDCC08}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BK.BenchmarkBox.Collections", "BK.BenchmarkBox.Collections\BK.BenchmarkBox.Collections.csproj", "{E91A9BEE-90A3-4C70-968A-BF6B53AA5C45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +22,10 @@ Global
 		{ED7BCEFD-3967-4670-98C8-44F69CA45126}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED7BCEFD-3967-4670-98C8-44F69CA45126}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED7BCEFD-3967-4670-98C8-44F69CA45126}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E91A9BEE-90A3-4C70-968A-BF6B53AA5C45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E91A9BEE-90A3-4C70-968A-BF6B53AA5C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E91A9BEE-90A3-4C70-968A-BF6B53AA5C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E91A9BEE-90A3-4C70-968A-BF6B53AA5C45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

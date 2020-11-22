@@ -1,0 +1,12 @@
+﻿// * Summary *
+
+BenchmarkDotNet=v0.12.1, OS=Windows 10.0.18363.1198 (1909/November2018Update/19H2)
+Intel Core i7-7700HQ CPU 2.80GHz (Kaby Lake), 1 CPU, 8 logical and 4 physical cores
+  [Host]     : .NET Framework 4.8 (4.8.4250.0), X64 RyuJIT
+  DefaultJob : .NET Framework 4.8 (4.8.4250.0), X64 RyuJIT
+
+
+|         Method |      Mean |     Error |    StdDev |
+|--------------- |----------:|----------:|----------:|
+| FirstOrDefault | 14.484 ms | 0.2869 ms | 0.5527 ms |
+|           Find |  3.543 ms | 0.1086 ms | 0.3169 ms |
