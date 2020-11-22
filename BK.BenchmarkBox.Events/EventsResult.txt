@@ -1,0 +1,81 @@
+﻿// AfterAll
+// Benchmark Process 11780 has exited with code 0
+
+Mean = 4.483 us, StdErr = 0.020 us (0.44%), N = 15, StdDev = 0.076 us
+Min = 4.394 us, Q1 = 4.409 us, Median = 4.503 us, Q3 = 4.536 us, Max = 4.604 us
+IQR = 0.127 us, LowerFence = 4.218 us, UpperFence = 4.727 us
+ConfidenceInterval = [4.402 us; 4.564 us] (CI 99.9%), Margin = 0.081 us (1.80% of Mean)
+Skewness = 0.17, Kurtosis = 1.42, MValue = 2
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\BK.BenchmarkBox.Events.Events-report.csv
+  BenchmarkDotNet.Artifacts\results\BK.BenchmarkBox.Events.Events-report-github.md
+  BenchmarkDotNet.Artifacts\results\BK.BenchmarkBox.Events.Events-report.html
+
+// * Detailed results *
+Events.ClassEvent: DefaultJob
+Runtime = .NET Framework 4.8 (4.8.4250.0), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 11.534 us, StdErr = 0.077 us (0.66%), N = 95, StdDev = 0.747 us
+Min = 9.243 us, Q1 = 11.067 us, Median = 11.500 us, Q3 = 12.029 us, Max = 13.662 us
+IQR = 0.962 us, LowerFence = 9.623 us, UpperFence = 13.472 us
+ConfidenceInterval = [11.274 us; 11.794 us] (CI 99.9%), Margin = 0.260 us (2.26% of Mean)
+Skewness = -0.24, Kurtosis = 3.48, MValue = 2
+-------------------- Histogram --------------------
+[ 9.197 us ;  9.627 us) | @@
+[ 9.627 us ;  9.968 us) |
+[ 9.968 us ; 10.326 us) | @@
+[10.326 us ; 10.733 us) | @@@@@@@@@
+[10.733 us ; 11.351 us) | @@@@@@@@@@@@@@@@@@@
+[11.351 us ; 11.781 us) | @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[11.781 us ; 12.264 us) | @@@@@@@@@@@@@@@@@@@@@@
+[12.264 us ; 12.732 us) | @@@@@@@@@@
+[12.732 us ; 13.225 us) | @@
+[13.225 us ; 13.877 us) | @
+---------------------------------------------------
+
+Events.StructEvent: DefaultJob
+Runtime = .NET Framework 4.8 (4.8.4250.0), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 6.683 us, StdErr = 0.063 us (0.94%), N = 94, StdDev = 0.611 us
+Min = 5.606 us, Q1 = 6.258 us, Median = 6.558 us, Q3 = 6.932 us, Max = 8.404 us
+IQR = 0.674 us, LowerFence = 5.247 us, UpperFence = 7.943 us
+ConfidenceInterval = [6.469 us; 6.897 us] (CI 99.9%), Margin = 0.214 us (3.21% of Mean)
+Skewness = 1.02, Kurtosis = 3.44, MValue = 2.19
+-------------------- Histogram --------------------
+[5.429 us ; 5.757 us) | @
+[5.757 us ; 6.101 us) | @@@@@@@
+[6.101 us ; 6.454 us) | @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[6.454 us ; 6.850 us) | @@@@@@@@@@@@@@@@@@@@@@@@
+[6.850 us ; 7.251 us) | @@@@@@@@@@
+[7.251 us ; 7.454 us) | @@
+[7.454 us ; 7.807 us) | @@@@@@@@
+[7.807 us ; 8.119 us) | @@
+[8.119 us ; 8.472 us) | @@@@
+---------------------------------------------------
+
+Events.ValueEvent: DefaultJob
+Runtime = .NET Framework 4.8 (4.8.4250.0), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 4.483 us, StdErr = 0.020 us (0.44%), N = 15, StdDev = 0.076 us
+Min = 4.394 us, Q1 = 4.409 us, Median = 4.503 us, Q3 = 4.536 us, Max = 4.604 us
+IQR = 0.127 us, LowerFence = 4.218 us, UpperFence = 4.727 us
+ConfidenceInterval = [4.402 us; 4.564 us] (CI 99.9%), Margin = 0.081 us (1.80% of Mean)
+Skewness = 0.17, Kurtosis = 1.42, MValue = 2
+-------------------- Histogram --------------------
+[4.379 us ; 4.490 us) | @@@@@@@
+[4.490 us ; 4.645 us) | @@@@@@@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.12.1, OS=Windows 10.0.18363.1198 (1909/November2018Update/19H2)
+Intel Core i7-7700HQ CPU 2.80GHz (Kaby Lake), 1 CPU, 8 logical and 4 physical cores
+  [Host]     : .NET Framework 4.8 (4.8.4250.0), X64 RyuJIT
+  DefaultJob : .NET Framework 4.8 (4.8.4250.0), X64 RyuJIT
+
+
+|      Method |      Mean |     Error |    StdDev |
+|------------ |----------:|----------:|----------:|
+|  ClassEvent | 11.534 us | 0.2605 us | 0.7474 us |
+| StructEvent |  6.683 us | 0.2143 us | 0.6115 us |
+|  ValueEvent |  4.483 us | 0.0808 us | 0.0756 us |
